@@ -2,7 +2,44 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Oswald;
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(fonts/Oswald-Light.ttf);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Oswald;
+
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p{
+    word-spacing: 2px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-b {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.pt {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* ----------------------------For mobiles phones--------------------- */
@@ -137,6 +174,10 @@ header {
         display: flex !important;
         justify-content: space-between;
     }
+
+    h1 {
+        font-size: 3em !important;
+    }
 }
 
 
@@ -151,4 +192,54 @@ header {
     color: black;
     background-color: gainsboro;
 
+}
+
+.blog-title h5::after {
+    content: "Jane's world";
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.baniere img {
+    max-width: 100%;
+    height: auto;
+}
+
+.baniere {
+    position: relative;
+}
+
+.baniere-desc {
+    color: white;
+    padding: 20px;
+    position: absolute;
+    top: 30%;
+
+}
+
+.baniere-desc button {
+    padding: 15px 30px;
+    opacity: .7;
+    margin-top: 20px;
+}
+
+.articles-container {
+    background-color: gainsboro;
+    padding: 30px;
+}
+
+.article {
+    background-color: white;
+
+}
+
+.article h3::after {
+    content: 'May 2, 2016';
+    opacity: .5;
+}
+
+.article img {
+    width: 100%;
+    height: auto;
 }
